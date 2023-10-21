@@ -21,10 +21,14 @@ painter2.fillRect(0, 0, 600, 600)
 
 painter2.fillStyle = "#0000ff"
 
-for (let r = 0; r < 13; ++r) {
-    for(let c = 0; c < 13; ++c) {
-        if(c<=r){
-            painter2.fillRect(10 + c*30, 10 + r*30, 20, 20)
+let i = 0;
+while (i < 13){
+    let c = 0;
+    while (c < 13){
+        if (c <= i) {
+            painter2.fillRect(10 + c * 30, 10 + i * 30, 20, 20);
         }
+        c++;
     }
+    i++;
 }
